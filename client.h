@@ -7,7 +7,7 @@ class Client {
         std:: string name_;
         std:: string mail_;
         int id_;
-        std::vector< int > livresEmpruntes_;
+        std::vector< int > livresEmpruntes_; // je cree une  liste de variable avec des id de livre empruntés
     public : 
         Client ( const std::string& name , const std :: string&mail , int id);
         const std:: string& getName() const;

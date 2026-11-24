@@ -35,13 +35,13 @@ bool  Bibliotheque :: emprunterLivre (Client& client , Livre& livre){
     }
     else {
          livre.modifierStatut( true); // on modifie la valeur du statut du livre si on peut l'emprunter 
-         client.modifirlivresEmpruntes( livre.getId() ); // on ajoute le livre à la liste des livres empruntés du client
+         client.modifierlivresEmpruntes( livre.getId() ); // on ajoute le livre à la liste des livres empruntés du client
          return true;
     }
     }
     bool retournerLivre ( Client& client , Livre& livre){
         livre.modifierStatut( false); // on modifie la valeur du statut du livre
-        client.modifirlivresEmpruntes( livre.getId() ); // on retire le livre de la liste des livres empruntés du client
+        client.modifierlivresEmpruntes( livre.getId() ); // on retire le livre de la liste des livres empruntés du client
         return true;
     }
     
