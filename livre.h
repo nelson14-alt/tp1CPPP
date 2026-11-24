@@ -14,5 +14,6 @@ class Livre {
         const std::string& getAuthor() const ;
         bool getStatut() const ; 
         int getId() const;
+        void modifierStatut( bool valeur );
 };
 #endif

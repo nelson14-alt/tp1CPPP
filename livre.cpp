@@ -20,3 +20,8 @@ Livre::Livre(const std::string& title , const std::string& author , bool statut 
      int Livre:: getId() const{
         return  id_;
      }
+     void  Livre:: modifierStatut( bool valeur ){
+        statut_ = valeur; 
+     }
+     
+     
